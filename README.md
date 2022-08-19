@@ -1,4 +1,4 @@
-# Hard Parts of Servers & Node
+# Node - learning shit
 
 ### 1. Intro
 
