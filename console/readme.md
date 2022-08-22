@@ -9,8 +9,8 @@ program called `env` -> we will pass name of program - it will find wherever is 
 - we might need to change mode for our file 
 
 ```bash
-chmod u+x ex1.js
-./ex1.js # it will run the same 
+chmod u+x index.js
+./index.js # it will run the same 
 ```
 
 ```js
@@ -29,7 +29,7 @@ console.log("Hello world");
 - return array with [node location, file location, passed argument]
 
 ```js
-./ex1.js --hello=world
+./index.js --hello=world
 [ '--hello=world' ]
 ```
 
@@ -43,11 +43,11 @@ console.log(args);
 It returns object 
 
 ```bash
-./ex1.js --hello=s
+./index.js --hello=s
 {
   _: [
     '/usr/local/bin/node',
-    '/Users/programators/Desktop/node/console/ex1.js'
+    '/Users/programators/Desktop/node/console/index.js'
   ],
   hello: 's'
 }
@@ -63,7 +63,7 @@ var args = require("minimist")(process.argv.slice(2));
 
 
 
->> ./ex1.js --hello=s
+>> ./index.js --hello=s
 >> { _: [], hello: 's' }
 
 
@@ -86,7 +86,7 @@ console.log(args);
 
 
 ```bash
-./ex1.js --help=foobar --file
+./index.js --help=foobar --file
 ```
 
 >
@@ -98,7 +98,7 @@ console.log(args);
 ### 2.2 Argument handling 
 
 ```bash
-./ex1.js --file="hello"
+./index.js --file="hello"
 # hello
 ```
 
@@ -127,8 +127,8 @@ function error(msg, includeHelp = false) {
     }
 }
 function printHelp() {
-    console.log("ex1 usage:");
-    console.log("   ex1 usage --file={FILENAME}");
+    console.log("index usage:");
+    console.log("   index usage --file={FILENAME}");
     console.log("");
     console.log("--help             print this help");
     console.log("--file={FILENAME   process the file");
@@ -167,7 +167,7 @@ function processFile(filepath) {
 
 ```
 
->  ./ex1.js --file=files/hello.txt
+>  ./index.js --file=files/hello.txt
 > <Buffer 68 65 6c 6c 6f 0a> 
 
 stringinifation of buffer - console log is trying to process value
