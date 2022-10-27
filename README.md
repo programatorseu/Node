@@ -8,8 +8,6 @@
 
 Js does not have access to computer features . so must use `c++` to control them (filesystem etc..)
 
-
-
 JS  + C++ combination => Node.js
 
 
@@ -21,8 +19,6 @@ JS  + C++ combination => Node.js
 3. ton of built-in labels that trigger Node features that are built in c++ to use computer's internal - **with Node help**
 
 #### 1.2 Execute JS code vs Node Code 
-
-
 
 ```js
 let num = 3;
@@ -47,7 +43,7 @@ thread of execution - ability to go line by line
 > **new execution context** 
 >
 >  - 1. declare `result` that will be output of `inputNumber * 2`
->    1. Return `result`  
+>    2. Return `result`  
 
 
 
@@ -431,9 +427,9 @@ Node is going to broadcast message that has attached function node will auto-run
 
 > **computer Internal features**
 
-> ​	 *2) Networking --> open socket ( send - receive data back)
->
-> ​	*3) port is set to 80
+> 	 	 *2) Networking --> open socket ( send - receive data back)
+> 	 	
+> 	 	*3) port is set to 80
 
 > **Node c++ features**
 >
@@ -740,8 +736,3 @@ no global code left , call stack is empty
 3. Check Queue - 
 
 > 11. at 506 `setImmediate`  (`immediately` added to call stack )
-
-
-
-
-
